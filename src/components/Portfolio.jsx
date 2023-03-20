@@ -5,24 +5,31 @@ import img1 from "../assets/portfolio/img1.jpg"
 import img2 from "../assets/portfolio/img2.jpg"
 import img3 from "../assets/portfolio/img3.jpg"
 import img4 from "../assets/portfolio/img4.jpg"
+import itCon from "../assets/it-consulting.jpeg"
+import outsource from "../assets/out.jpeg"
+import webdev from "../assets/web.png"
 
 const Portfolio = () => {
   const exp =[
+    
     {
       id:1,
-      pict: img1,
+      pict: itCon,
+      title:"We offer comprehensive tech expertise and enterprise IT support. Our software development services include strategy consulting, CX design, engineering, and lifecycle management of custom products, as well as system integration",
       code: "code",
       demo: "demo"
     },
     {
       id:2,
-      pict: img4,
+      pict: outsource,
+      title:"custom software development outsourced product development verification and validation application development and maintenance",
       code: "code",
       demo: "demo"
     },
     {
       id:3,
-      pict: img3,
+      pict: webdev,
+      title:"web development services across multiple platforms integrating complex features and functionality into your websites. We take a client and or user-based approach to developing websites.",
       code: "code",
       demo: "demo"
     },
@@ -63,10 +70,7 @@ const Portfolio = () => {
                 <div className="flex items-center justify-around mt-10">
                   {/* <button className=" hover:scale-x-110 text-gray-400 hover:text-white duration-200"> Demo </button>
                   <button className=" hover:scale-x-110 text-gray-400 hover:text-white duration-200"> Code </button> */}
-                  <p>Intellectsoft Recognized by GoodFirms as the Best Company to Work With
-Product development and mobile app development involve complex processes with numerous intricacie...
-
-</p>
+                  <p> {portfollio.title}</p>
                 </div>
               </div> 
           ))}
